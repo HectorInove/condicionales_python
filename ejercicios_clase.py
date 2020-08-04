@@ -12,7 +12,7 @@ adquiridos durante la clase
 '''
 
 __author__ = "Richard Rodriguez"
-__email__ = "alumnos@inove.com.ar"
+__email__ = "r.rvangaurdia@gmail.com"
 __version__ = "1.1"
 
 
@@ -26,11 +26,22 @@ def ej1():
 
     numero_2 = int(input('Ingrese el segundo número:\n'))
 
-    if (numero_1 > numero_2):
-        print ("´numero_1 es mayor que numero_2´")
+    if numero_1 > numero_2:
+        print('"n1 =', numero_1, '" es mayor a "n2 =', numero_2, '"')
     else:
-        print ("´numero_1 no es mayor que numero_2´")
-        
+        print('"n2 =', numero_2, '" es mayor a "n1 =', numero_1, '"')
+
+
+
+
+ej1()
+
+       
+
+
+
+
+
     
         
 
