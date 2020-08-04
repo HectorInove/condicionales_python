@@ -11,7 +11,7 @@ Programa creado para poner a prueba los conocimientos
 adquiridos durante la clase
 '''
 
-__author__ = "Inove Coding School"
+__author__ = "Richard Rodriguez"
 __email__ = "alumnos@inove.com.ar"
 __version__ = "1.1"
 
@@ -26,8 +26,22 @@ def ej1():
 
     numero_2 = int(input('Ingrese el segundo número:\n'))
 
+    if (numero_1 > numero_2):
+        print ("´numero_1 es mayor que numero_2´")
+    else:
+        print ("´numero_1 no es mayor que numero_2´")
+        
+    
+        
+
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
+
+             
+    
+    
+    
+    
 
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
@@ -126,7 +140,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()
