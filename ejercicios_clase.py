@@ -27,33 +27,27 @@ def ej1():
     numero_2 = int(input('Ingrese el segundo número:\n'))
 
     if numero_1 > numero_2:
-        print('"n1 =', numero_1, '" es mayor a "n2 =', numero_2, '"')
+       print("el numero mayor es {}" .format(numero_1 , numero_2))
+    elif numero_2 > numero_1:
+       print("el numero mayor es {}" .format(numero_2 , numero_1))
+    if numero_1 <=0 :
+        print(" el numero negativo es {}".format(numero_1))
+    elif numero_2 <=0:
+        print("el numero negativo es {}".format(numero_2))
+    if (numero_1 > 0 and numero_1 < 100):
+        print("cumple la condicion")
     else:
-        print('"n2 =', numero_2, '" es mayor a "n1 =', numero_1, '"')
+        (numero_1 < 0 and numero_1 > 100)
+        print("no cumple la condicion")
+    if  (numero_1 < 10 or numero_2 > -2):
+        print("se cumple la condicion")
+    else:
+        (numero_1 > 10 or numero_2 < -2)
+        print("no se cumple la condicion")
 
-
-
-
-ej1()
-
-       
-
-
-
-
-
-    
-        
 
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
-
-             
-    
-    
-    
-    
-
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
 
@@ -75,6 +69,28 @@ def ej2():
 
     texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
+    if texto_1 > texto_2:
+        print("palabra mayor alfabeticamente {}".format(texto_1))
+    elif texto_2 > texto_1:
+         print("palabra mayor alfabeticamente {}".format(texto_2))
+    if texto_1 > texto_2:
+        print("la palabra tiene letras ", len(texto_1))
+    if texto_1 > texto_2:
+        print("mayor cantidad de caracteres ", min(texto_1))
+    else:
+        texto_1 < texto_2
+        print("mayor cantidad de caracteres " , min(texto_2))
+
+        
+
+
+    
+
+
+        
+
+    #texto 1 guapa tex 2 glam 
+
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
 
@@ -86,14 +102,26 @@ def ej2():
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
 
-    copia_texto_1 = texto_1  # Copia de la variable texto_1
+    copia_texto_1 = texto_1
+
+    if texto_1 == copia_texto_1:
+        print ("los textos son iguales")
+    
+    else:
+        texto_1 != copia_texto_1
+        print("los textos no son iguales")
+
+                                # Copia de la variable texto_1
+
+    
+
 
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
 
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
-
+    
 
 def ej3():
     # Ejercicios de práctica numérica
@@ -101,6 +129,18 @@ def ej3():
     # Condicionales anidados
     numero_1 = 7
     numero_2 = -2
+    if numero_1 > 5:
+        print("N_1 es mayor")
+    if  numero_2 >0:
+        print("Resp=1")
+    elif numero_2<0:
+        print("Resp=2") 
+    if numero_1 > 5:
+        print("Resp_3") 
+    else:
+         numero_2 > 5 
+         print("Resp_4")
+
 
     # Verifique si el numero_1 es mayor a 5
     #   --> En caso afirmativo, verifique si el numero_2
@@ -114,7 +154,22 @@ def ej3():
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
+    puntaje = int(input("ingrea tu nota{}"))
     puntaje = 70
+    if puntaje >= 90:
+        print("A")
+    elif puntaje >= 80:
+        print("B")  
+    elif puntaje >= 70:
+        print("c")  
+    elif puntaje >= 60:
+        print("D")
+    else:
+        puntaje <= 60
+        print("F")
+
+
+
 
     # Si el puntaje es mayor igual a 90 --> imprimir A
     # Si el puntaje es mayor igual a 80 --> imprimir B
@@ -124,7 +179,6 @@ def ej3():
 
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
-
 
 def ej4():
     # Ejemplos variables de texto
@@ -152,6 +206,6 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    #ej2()
-    #ej3()
-    #ej4()
+    ej2()
+    ej3()
+    ej4()
