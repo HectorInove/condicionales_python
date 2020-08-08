@@ -31,10 +31,20 @@ def ej1():
     elif numero_2 > numero_1:
        print("el numero mayor es {}" .format(numero_2 , numero_1))
     if numero_1 <=0 :
+        # Inovetip: Si el numero es 0, no es negativo, ojo!
         print(" el numero negativo es {}".format(numero_1))
     elif numero_2 <=0:
+        # Inovetip: Si el numero es 0, no es negativo, ojo!
+        # Y estás preguntando por numero_2, siendo que no es lo
+        # que se pide en el enunciado ;D.
+        # Lo correcto sería if numero_1 < 0:
         print("el numero negativo es {}".format(numero_2))
     if (numero_1 > 0 and numero_1 < 100):
+        # Inovetip: Excelente!
+        # También podes escribir: 
+        # if (numero_1 > 0) and (numero_1 < 100):
+        # Para marcar bien que comparas contra qué, pero así
+        # está perfecto.
         print("cumple la condicion")
     else:
         (numero_1 < 0 and numero_1 > 100)
@@ -74,8 +84,17 @@ def ej2():
     elif texto_2 > texto_1:
          print("palabra mayor alfabeticamente {}".format(texto_2))
     if texto_1 > texto_2:
+        # Inovetip: Aquí tenes que usar la función len() dentro del 
+        # condicional, algo así: 
+        # if len(texto_1) > len(texto_2):
+        # Y siempre considerá qué hacer si son iguales.
         print("la palabra tiene letras ", len(texto_1))
     if texto_1 > texto_2:
+        # Inovetip: fijate, acá preguntas si es mayor alfabeticamente,
+        # y si es así, imprime con la función min() la letra menor de la 
+        # palabra en texto_1
+        # Para utilizar la primera letra, usa texto_1[0]
+        # El operador corchete te sirve para seleccionar una letra en particular
         print("mayor cantidad de caracteres ", min(texto_1))
     else:
         texto_1 < texto_2
@@ -109,6 +128,7 @@ def ej2():
     
     else:
         texto_1 != copia_texto_1
+         # Inovetipo: Verifique que copia_texto_1 es distinta a texto_2
         print("los textos no son iguales")
 
                                 # Copia de la variable texto_1
@@ -131,13 +151,23 @@ def ej3():
     numero_2 = -2
     if numero_1 > 5:
         print("N_1 es mayor")
+        # Inovetip: Acá tenes que anidar el segundo if, así:
+        # if numero_1 > 5:
+        #     if  numero_2 >0:
+        #         print("Resp=1")
+        #     elif numero_2<0:
+        #         print("Resp=2") 
+        
     if  numero_2 >0:
         print("Resp=1")
     elif numero_2<0:
         print("Resp=2") 
     if numero_1 > 5:
+        # Inovetip: Aqui preguntas nuevamente lo mismo que en lo anterior
+        # Tendrías que preguntar if numero_1 < 5:
         print("Resp_3") 
     else:
+        # Inovetip: aquí usas el condicional sin if!
          numero_2 > 5 
          print("Resp_4")
 
@@ -154,6 +184,7 @@ def ej3():
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
+    # Inovetip: Perfecto! :D
     puntaje = int(input("ingrea tu nota{}"))
     puntaje = 70
     if puntaje >= 90:
